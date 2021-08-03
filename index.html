@@ -1,41 +1,99 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en" style="font-size: 24px">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/normailize.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <title>Index</title>
-
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Резюме</title>
 </head>
 
 <body>
-    <main>
-        <nav>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./market.html">Market</a></li>
-                <li><a href="./profile.html">Profile</a></li>
-                <li><a href="./settings.html">Settings</a></li>
-            </ul>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper wrapper">
+        <a href="/" class="logo header__logo">
+          <div class="logo-wrap header__logo-wrap">
+            <img src="img/logo.png" alt="картинка" class="header__logo-wrap__img">
+          </div>
+          <p class="header__text">Сайт визитка</p>
+        </a>
+
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-link"><a href="#">Портфолио</a></li>
+            <li class="header__menu-link"><a href="#">GitHub</a></li>
+            <li class="header__menu-link"><a href="#">LinkedIn</a></li>
+            <li class="header__menu-link"><a href="#">HH</a></li>
+            <li class="header__menu-link"><a href="#">Resume</a></li>
+          </ul>
         </nav>
 
-        <div class="" style="display: inline-block;"><img style="width: 300px; height: 300px;"
-                src="./assets/img/1603138306_52-p-leonardo-di-kaprio-71.jpg" alt=""></div>
-        <div class="" style="display: inline-block;"><img style="width: 300px; height: 300px;"
-                src="./assets/img/brad-pitt-bred-pitt-muzhchina (1).jpg" alt=""></div>
-        <div class="" style="display: inline-block;"><img style="width: 300px; height: 300px;"
-                src="./assets/img/DiQC7-uW4AEoOaJ.jpg" alt=""></div>
+        <form class="form1">
+          <input class="form1__input" name="name" type="text" placeholder="Введите ваше имя">
+          <button class="form1__button" type="button">Войти в IT</button>
+        </form>
 
+      </div>
+    </div>
+  </header>
 
-        <div class="boxes">
-            <div class="red"></div>
-            <div class="yellow"></div>
-            <div class="green"></div>
+  <main class="main">
+    <section class="example main__example">
+      <div class="container">
+        <div class="wrapper main__wrapper">
+          <div class="box main__box">1</div>
+          <div class="box main__box">2</div>
+          <div class="box main__box">3</div>
+          <div class="box main__box">4</div>
+          <div class="box main__box">5</div>
+          <div class="box main__box">6</div>
+          <div class="box main__box">7</div>
+          <div class="box main__box">8</div>
+
         </div>
-    </main>
-</body>
+      </div>
+    </section>
+
+    <div class="main__content">
+    <div class="container">
+      <label class="content__label-blue" style="width: 100px; height: 100px; background-color: blue;">
+        <input class="contentn__checkbox" type="checkbox" id="chkbox">
+      </label>
+      <label class="content__label-chkbox" for="chkbox">
+        <div class="box content__box" style=" margin: 0 auto;"></div>
+      </label>
+  
+      <div class="audio content__audio">
+        <audio class="content__audio__controls" controls="controls">
+          <source class="content__audio__source" src="./audio/Ensoniq-ZR-76-06-BreakBt-90.wav" type="audio/wav">
+        </audio>
+  
+  
+        <div class="video content__video">
+          <video class="content__video__controls" width="400" height="400" controls="controls">
+            <source class="content__video__source" src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4"
+              type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          </video>
+        </div>
+  
+        <select class="content__select" name="name">
+          <option class="content__select__option" value="one">Дима</option>
+          <option class="content__select__option" value="one">Сергей</option>
+          <option class="content__select__option" value="one">Саша</option>
+          <option class="content__select__option" value="one">Вова</option>
+          <option class="content__select__option" value="one">Паша</option>
+        </select>
+  
+      </div>
+    </div>
+  </div>
+  </main>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
 
 </html>
