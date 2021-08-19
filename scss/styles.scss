@@ -1,0 +1,36 @@
+@import "_fonts";
+@import "_nav";
+@import "_reset";
+@import "_text";
+@import "_header";
+@import "_slider";
+
+.container{
+	margin: 0 auto;
+	max-width: 1024px;
+	padding: 0 3px;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.section {
+	width: 100%;
+	height: 800px;
+}
+
+.Account_________Wishlist_________Checkout______ {
+    font-size: 13px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: justifyLeft;
+    position: absolute;
+    left: 855px;
+    top: 13.56px;
+    z-index: 275;
+  }
+  
+
