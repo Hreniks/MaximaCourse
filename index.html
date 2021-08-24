@@ -10,28 +10,204 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Nunito:ital,wght@0,400;0,600;0,700;1,300&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <title>©Revo Coffee</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="header__wrapper">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="logo">
+                    <a href="" class="logo-link"><img src="./img/revo_logo.png" alt="" class="logo-img"></a>
+                    <div class="logo__text">
+                        <span class="logo__text-span">YOUR</span>
+                        <span class="logo__text-span--accent">PERSONALIZED</span>
+                        <span class="logo__text-span">COFFEE</span>
+                    </div>
+                </div>
+                <div class="player">
+                    <video poster="./img/video_preview.jpg" src="" class="player-video">
 
-            <div class="logo">
-                <a href="" class="logo-link"><img src="./img/revo_logo.png" alt="" class="logo-img"></a>
+                    </video>
+                    <div class="player__play">
+                        <i class="fas fa-play player__play-icon"></i>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="menu__cart">
+                        <img src="./img/cart.svg" alt="" class="menu__cart-img">
+                    </div>
+                    <ul class="menu__list">
+                        <li class="menu__list-item menu__list-item--active">HOME PAGE</li>
+                        <li class="menu__list-item">COFFEE</li>
+                        <li class="menu__list-item">COLOR FILTER</li>
+                        <li class="menu__list-item">COFFEE COMBO</li>
+                        <li class="menu__list-item">GIFTSET</li>
+                        <li class="menu__list-item">CONTACT</li>
+                    </ul>
+                </div>
             </div>
-            
-                <div class="video">
-                    <video src="" poster="./img/video_preview.jpg"></video>
-                </div>
-
-                <div class="header__wrapper-menu">
-
-                </div>
-            
         </div>
     </header>
+
+    <main class="main">
+        <section class="advantages">
+            <div class="container container--1104">
+                <div class="advantages__wrapper">
+                    <div class="advantages__text title-text">
+                        <h3 class="advantages__text-sub_title sub-title">Your Personalized Coffee</h3>
+                        <h1 class="advantages__text-title title">COFFEE BUILD YOUR BASE</h1>
+                    </div>
+                    <div class="advantages__content">
+                        <ul class="advantages__content-list">
+                            <li class="advantages__content-list-item"><img src="./img/advantages-1.svg" alt=""
+                                    class="advantages__content-list-item-img">
+                                <h2 class="advantages__content-list-item-title">Source</h2>
+                                <p class="advantages__content-list-item-description">Arabica and Robusta coffee beans
+                                    meet international standards.</p>
+                            </li>
+                            <li class="advantages__content-list-item"><img src="./img/advantages-2.svg" alt=""
+                                    class="advantages__content-list-item-img">
+                                <h2 class="advantages__content-list-item-title">Quality</h2>
+                                <p class="advantages__content-list-item-description">Each coffee bean is a highly
+                                    concentrated process of coffee artisans.</p>
+                            </li>
+                            <li class="advantages__content-list-item"><img src="./img/advantages-3.svg" alt=""
+                                    class="advantages__content-list-item-img">
+                                <h2 class="advantages__content-list-item-title">Nuts</h2>
+                                <p class="advantages__content-list-item-description">70% of the quality of a cup of
+                                    coffee comes from the origin and quality of the green bean.</p>
+                            </li>
+                            <li class="advantages__content-list-item"><img src="./img/advantages-4.svg" alt=""
+                                    class="advantages__content-list-item-img">
+                                <h2 class="advantages__content-list-item-title">Bartending</h2>
+                                <p class="advantages__content-list-item-description">The coffee beans are molted through
+                                    a thorough and rigorous roasting process.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__wrapper">
+                    <div class="catalog__text title-text">
+                        <h3 class="catalog__text-sub_title sub-title">Choose Your Favorite</h3>
+                        <h1 class="catalog__text-title title">STANDARD GUARAN</h1>
+                    </div>
+                    <div class="catalog__content">
+                        <ul class="catalog__content-list">
+                            <li class="catalog__content-list-item">
+                                <div class="catalog__content-list-item-image">
+                                    <img src="./img/catalog-1.jpg" alt="" class="catalog__content-list-item-image-img">
+                                </div>
+                                <div class="catalog__content-list-item-info">
+                                    <span class="catalog__content-list-item-info-price">99.000</span>
+                                    <span class="catalog__content-list-item-info-title">REVO Morning</span>
+                                    <p class="catalog__content-list-item-info-description">
+                                        Bitter, sweet aftertaste, floral scent
+                                    </p>
+                                    <div class="catalog__content-list-item-info__buttons">
+                                        <button class="catalog__content-list-item-info__buttons--buy btn--buy">BUY NOW</button>
+                                        <button class="catalog__content-list-item-info__buttons--details btn--details">DETAILS</button>
+                                    </div>
+                                </div>
+                                
+                            </li>
+                            <li class="catalog__content-list-item">
+                                <div class="catalog__content-list-item-image">
+                                    <img src="./img/catalog-2.jpg" alt="" class="catalog__content-list-item-image-img">
+                                </div>
+                                <div class="catalog__content-list-item-info">
+                                    <span class="catalog__content-list-item-info-price">85.000</span>
+                                    <span class="catalog__content-list-item-info-title">REVO Everyday</span>
+                                    <p class="catalog__content-list-item-info-description">
+                                        balance, bitter aftertaste, chocolate taste
+                                    </p>
+                                    <div class="catalog__content-list-item-info__buttons">
+                                        <button class="catalog__content-list-item-info__buttons--buy btn--buy">BUY NOW</button>
+                                        <button class="catalog__content-list-item-info__buttons--details btn--details">DETAILS</button>
+                                    </div>
+                                </div>
+                                
+                            </li>
+                            <li class="catalog__content-list-item">
+                                <div class="catalog__content-list-item-image">
+                                    <img src="./img/catalog-3.jpg" alt="" class="catalog__content-list-item-image-img">
+                                </div>
+                                <div class="catalog__content-list-item-info">
+                                    <span class="catalog__content-list-item-info-price">139.000</span>
+                                    <span class="catalog__content-list-item-info-title">REVO Origin</span>
+                                    <p class="catalog__content-list-item-info-description">
+                                        balance, bitter aftertaste, chocolate taste
+                                    </p>
+                                    <div class="catalog__content-list-item-info__buttons">
+                                        <button class="catalog__content-list-item-info__buttons--buy btn--buy">BUY NOW</button>
+                                        <button class="catalog__content-list-item-info__buttons--details btn--details">DETAILS</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="catalog__content-list-item">
+                                <div class="catalog__content-list-item-image">
+                                    <img src="./img/catalog-4.jpg" alt="" class="catalog__content-list-item-image-img">
+                                </div>
+                                <div class="catalog__content-list-item-info">
+                                    <span class="catalog__content-list-item-info-price">75.000</span>
+                                    <span class="catalog__content-list-item-info-title">Bold REVO</span>
+                                    <p class="catalog__content-list-item-info-description">
+                                    bold, bitter, traditional
+                                    </p>
+                                    <div class="catalog__content-list-item-info__buttons">
+                                        <button class="catalog__content-list-item-info__buttons--buy btn--buy">BUY NOW</button>
+                                        <button class="catalog__content-list-item-info__buttons--details btn--details">DETAILS</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gift">
+            <div class="container container--920">
+                <div class="gift__wrapper">
+                    <div class="gift__text title-text">
+                        <div class="gift__text-sub_title sub-title">Best Gift For Best Friend</div>
+                        <div class="gift__text-title title">GIFTSET</div>
+                    </div>
+                    <div class="gift__content">
+                        <img src="./img/gift-img.png" alt="" class="gift__content-img">
+                        <div class="gift__content-text">
+                            <span class="gift__content-text-price">285.000</span>
+                            <span class="gift__content-text-title">Giftset "Vietnamese filter coffee"</span>
+                            <p class="gift__content-text-description">Great gift for coffee connoisseurs. Coffee beans are carefully selected by Revo, roasted according to the technology and know-how learned from famous artisans, along with the love and passion of the coffee maker… creating pure cups of coffee only exclusively for you.</p>
+                        </div>
+                        <div class="gift__content-icons">
+                            <img src="" alt="" class="gift__content-icons-img">
+                            <div class="gift__content-icons-text">
+                                <span class="gift__content-icons-text--upper">Loại hạt</span>
+                                <span class="gift__content-icons-text--bottom">Fine Robusta Blend</span>
+                            </div>
+                            <div class="gift__content-icons-text">
+                                <span class="gift__content-icons-text--upper">Height</span>
+                                <span class="gift__content-icons-text--bottom">700 - 800m</span>
+                            </div>
+                        </div>
+                        <div class="gift__content__buttons">
+                            <button class="gift__content__buttons--buy btn--buy">BUY NOW</button>
+                            <button class="gift__content__buttons--details btn--details">DETAILS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

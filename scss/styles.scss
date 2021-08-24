@@ -1,10 +1,83 @@
 @import "_reset";
+@import "_vars";
 @import "_fonts";
 @import "_header";
+@import "_advantages";
+@import "_catalog";
+@import "_gift";
+
+
+body {
+    background-color: #f2f2f2;
+}
 
 
 .container {
-    max-width: 1104px;
-    margin: 0 auto  ;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+
+    &--1104 {
+        max-width: 1104px;
+    }
+
+    &--920{
+        max-width: 920px;
+    }
 }
 
+.title {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 34px;
+}
+
+.sub-title {
+    font-family: $nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.title-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $primary-color;
+    padding-top: 87px;
+}
+
+.btn--buy {
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 19px;
+    background-color: $accent-color;
+    padding: 6px 25px;
+    color: #F9FBFF;
+
+    font-family: $nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.btn--details {
+    border: none;
+    outline: none;
+    background: none;
+    color: $primary-color;
+    padding: 0;
+    font-family: $nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
