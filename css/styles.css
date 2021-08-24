@@ -505,7 +505,7 @@ input[type=button] {
 }
 
 .catalog__wrapper {
-  padding-bottom: 126px;
+  padding-bottom: 128px;
 }
 
 .catalog__content {
@@ -529,14 +529,10 @@ input[type=button] {
   display: flex;
   -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
           box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
-  width: 560px;
-  height: 256px;
   margin: 15px;
 }
 
 .catalog__content-list-item-image {
-  max-width: 236px;
-  height: 256px;
   overflow: hidden;
   background-color: red;
 }
@@ -572,7 +568,6 @@ input[type=button] {
 
 .catalog__content-list-item-info-title {
   margin-top: 8px;
-  max-width: 220px;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -583,6 +578,7 @@ input[type=button] {
 
 .catalog__content-list-item-info-description {
   margin-top: 24px;
+  margin-bottom: 24px;
   width: 238px;
   height: 38px;
   font-family: "Nunito", sans-serif;
@@ -623,10 +619,22 @@ input[type=button] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 68px;
   margin-left: 256px;
+  padding-left: 300px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-right: 66px;
   width: 794px;
   height: 460px;
   background-color: #fff;
+  position: relative;
+}
+
+.gift__content-img {
+  position: absolute;
+  top: 64px;
+  left: -260px;
 }
 
 .gift__content-text {
@@ -639,7 +647,40 @@ input[type=button] {
           flex-direction: column;
 }
 
-.gift__content-icons {
+.gift__content-text-price {
+  font-size: 20px;
+}
+
+.gift__content-text-title {
+  margin-top: 12px;
+  font-size: 24px;
+}
+
+.gift__content-text-description {
+  margin-top: 12px;
+  max-width: 430px;
+  font-size: 16px;
+}
+
+.gift__content-text__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 24px;
+}
+
+.gift__content-text__icons-img {
+  margin-left: 43px;
+}
+
+.gift__content-text__icons-img:first-child {
+  margin-left: 0;
+}
+
+.gift__content-text__icons-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -647,6 +688,75 @@ input[type=button] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 19px;
+}
+
+.gift__content-text__icons-text--upper {
+  font-size: 16px;
+}
+
+.gift__content-text__icons-text--bottom {
+  font-size: 16px;
+}
+
+.gift__content-text__buttons {
+  margin-top: 46px;
+}
+
+.gift__content-text__buttons--details {
+  margin-left: 90px;
+}
+
+.combo {
+  position: relative;
+}
+
+.combo::before {
+  content: "";
+  max-width: calc(100vw - (((100vw - 1104px) / 2) + 225px + 879px - 172px));
+  width: 100%;
+  height: 100%;
+  background-color: #415167;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.combo__content-list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.combo__content-list-item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 562px;
+}
+
+.footer__wrapper {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EDF0F5;
+}
+
+.footer-copyright {
+  font-family: Nunito;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #415167;
 }
 
 body {
@@ -717,6 +827,10 @@ body {
   text-align: center;
 }
 
+.btn--buy--large {
+  padding: 6px 48px;
+}
+
 .btn--details {
   border: none;
   outline: none;
@@ -729,5 +843,29 @@ body {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+}
+
+.card-price {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: #C7A17A;
+}
+
+.card-title {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 28px;
+  color: #232C38;
+}
+
+.card-description {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  color: #151D28;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,10 +1,10 @@
-
 @import "_vars";
 
-.gift{
+.gift {
 
     position: relative;
-    &__wrapper{
+
+    &__wrapper {
         padding-bottom: 126px;
     }
 
@@ -16,34 +16,100 @@
         background-color: $light-grey;
 
         position: absolute;
-        
+
         z-index: -1;
 
     }
 
-    &__content{
+    &__content {
         display: flex;
 
+        margin-top: 68px;
         margin-left: 256px;
+        padding-left: 300px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+        padding-right: 66px;
 
         width: 794px;
         height: 460px;
 
         background-color: #fff;
 
-        &-img{
-            // display: none;
-            // position: absolute;
+        position: relative;
+
+        &-img {
+            
+            position: absolute;
+            top: 64px;
+            left: -260px;
         }
 
-        &-text{
+        &-text {
             display: flex;
             flex-direction: column;
+
+            &-price {
+                font-size: 20px;
+            }
+
+            &-title {
+                margin-top: 12px;
+
+                font-size: 24px;
+            }
+
+            &-description {
+                margin-top: 12px;
+                max-width: 430px;
+
+                font-size: 16px;
+            }
+
+            &__icons {
+                display: flex;
+                align-items: center;
+
+
+                margin-top: 24px;
+
+                &-img {
+                    margin-left: 43px;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+
+                &-text {
+                    display: flex;
+                    flex-direction: column;
+
+                    margin-left: 19px;
+
+                    &--upper {
+                       font-size: 16px;
+                    }
+
+                     &--bottom {
+                         font-size: 16px;
+                    }
+                }
+            }
+
+            &__buttons{
+                margin-top: 46px;
+
+                &--buy {
+                    
+                }
+
+                &--details{
+                    margin-left: 90px;
+                }
+            }
         }
 
-        &-icons {
-            display: flex;
-            flex-direction: column;
-        }
+
     }
 }

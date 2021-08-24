@@ -5,7 +5,8 @@
 @import "_advantages";
 @import "_catalog";
 @import "_gift";
-
+@import "_combo";
+@import "_footer";
 
 body {
     background-color: #f2f2f2;
@@ -21,7 +22,7 @@ body {
         max-width: 1104px;
     }
 
-    &--920{
+    &--920 {
         max-width: 920px;
     }
 }
@@ -66,6 +67,10 @@ body {
     font-size: 16px;
     line-height: 22px;
     text-align: center;
+
+    &--large {
+        padding: 6px 48px;
+    }
 }
 
 .btn--details {
@@ -80,4 +85,36 @@ body {
     font-size: 16px;
     line-height: 22px;
     text-align: center;
+}
+
+
+.card {
+
+    &-price {
+        font-family: $nunito;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+
+        color: $accent-color;
+    }
+
+    &-title {
+        font-family: $nunito;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 28px;
+
+        color: #232C38;
+    }
+
+    &-description {
+        
+        font-family: $nunito;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 22px;
+
+        color: #151D28;
+    }
 }
